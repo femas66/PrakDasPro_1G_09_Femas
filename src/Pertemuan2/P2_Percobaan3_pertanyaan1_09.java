@@ -2,25 +2,17 @@ package Pertemuan2;
 
 public class P2_Percobaan3_pertanyaan1_09 {
   public static void main(String[] args) {
-    System.out.println("\n\n\t\t\t\t\tKARTU RENCANA STUDI (KRS)\n\n");
-    System.out.println("NIM\t\t\t: 244107020200");
-    System.out.println("NAMA\t\t\t: FEMAS AKBAR FATURROHIM");
-    System.out.println("PROGRAM STUDI\t\t: Diploma IV Teknik Informatika");
-    System.out.println("KELAS\t\t\t: 1G\n");
-    System.out.println("-------------------------------------------------------------------------------------------------");
-    System.out.println("|\tKODE MK\t\t|\t\tMATA KULIAH\t\t|\tSKS\t|\tJAM\t|");
-    System.out.println("-------------------------------------------------------------------------------------------------");
-    System.out.println("|\tRTI241001\t| Pancasila\t\t\t\t|\t2\t|\t2\t|");
-    System.out.println("|\tRTI241002\t| Konsep Teknologi Informasi\t\t|\t2\t|\t4\t|");
-    System.out.println("|\tRTI241003\t| Critical Thinking dan Problem Solving\t|\t2\t|\t4\t|");
-    System.out.println("|\tRTI241004\t| Matematika Dasar\t\t\t|\t3\t|\t6\t|");
-    System.out.println("|\tRTI241005\t| Rekayasa Perangkat Lunak\t\t|\t2\t|\t4\t|");
-    System.out.println("|\tRTI241006\t| Dasar Pemrograman\t\t\t|\t2\t|\t4\t|");
-    System.out.println("|\tRTI241007\t| Praktikum Dasar Pemrograman\t\t|\t2\t|\t6\t|");
-    System.out.println("|\tRTI241008\t| Keselamatan dan Kesehatan Kerja\t|\t2\t|\t4\t|");
-    System.out.println("-------------------------------------------------------------------------------------------------");
-    System.out.println("|\t\t\t|\t\tJUMLAH\t\t\t|\t18\t|\t34\t|");
-    System.out.println("-------------------------------------------------------------------------------------------------");
+    System.out.println("---------------------------------------------------------");
+        System.out.println("-- Data Mahasiswa Jurusan Teknologi Informasi POLINEMA --");
+        System.out.println("---------------------------------------------------------");
+        System.out.println("Nama\t\t: Femas Akbar Faturrohim");
+        System.out.println("NIM\t\t\t: 244107020200");
+        System.out.println("Kelas\t\t: 1G");
+        System.out.println("No Absen\t: 9");
+        System.out.println("Prodi\t\t: Teknik Informatika");
+        System.out.println("Alamat\t\t: Padang, Lumajang");
+        System.out.println("No HP\t\t: 085735547445");
+        System.out.println("Hobi\t\t: Main Game");
 
   }
   
