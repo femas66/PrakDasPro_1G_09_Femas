@@ -7,16 +7,16 @@ public class Siakad09 {
     Scanner sc = new Scanner(System.in);
 
     String nama, nim;
-    char kelas;
+    String kelas;
     byte absen;
-    double nilaiKuis, nilaiTugas, nilaiUjian, nilaiAkhir;
+    double nilaiKuis, nilaiTugas, nilaiUjian, Nilai-Akhir;
 
     System.out.print("Masukan nama: ");
     nama = sc.nextLine();
     System.out.print("Masukan NIM: ");
     nim = sc.nextLine();
     System.out.print("Masukan kelas: ");
-    kelas = sc.nextLine().charAt(0);
+    kelas = sc.nextLine();
     System.out.print("Masukan nomor absen: ");
     absen = sc.nextByte();
 
