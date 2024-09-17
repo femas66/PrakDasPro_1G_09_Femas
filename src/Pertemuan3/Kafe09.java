@@ -9,7 +9,7 @@ public class Kafe09 {
     boolean keanggotaan;
     int jumlahKopi, jumlahTeh, jumlahRoti;
     double hargaKopi = 12000.0, hargaTeh = 7000.0, hargaRoti = 2000.0, totalHarga, nominalBayar;
-    float diskon = 10 / 100f;
+    float diskon = 10 / 100;
 
     System.out.print("Masukan keanggotaan (true/false): ");
     keanggotaan = input.nextBoolean();
