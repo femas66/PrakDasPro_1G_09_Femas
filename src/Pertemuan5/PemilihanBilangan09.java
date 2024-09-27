@@ -12,10 +12,6 @@ public class PemilihanBilangan09 {
     System.out.print("input angka : ");
     angka = input.nextInt();
 
-    if (angka % 2 == 0) {
-      System.out.println(angka + " adalah bilangan genap");
-    } else {
-      System.out.println(angka + " adalah bilangan ganjil");
-    }
+    System.out.println((angka % 2 == 0) ? angka + " adalah bilangan genap" : angka + " adalah bilangan ganjil");
   }
 }
