@@ -45,7 +45,7 @@ public class Pemilihan2Percobaan209 {
       }
       totalBayar = (int) (harga - (harga * diskon));
       System.out.println("Total bayar setelah diskon : " + totalBayar);
-    } else if (member.equalsIgnoreCase("n")) {
+    } else if (member.equals("n")) {
 
       if (menu == 1) {
         harga = 14000;
