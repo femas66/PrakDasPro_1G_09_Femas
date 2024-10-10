@@ -17,7 +17,7 @@ public class PemilihanHariDenganIf09 {
             dayType = "Weekend";
         }
 
-        System.out.println(dayName + " is a " + dayType);
+        System.out.println(hari + " is a " + dayType);
     }
 
 }

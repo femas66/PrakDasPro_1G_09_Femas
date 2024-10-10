@@ -13,7 +13,6 @@ public class P2_Percobaan3_pertanyaan1_09 {
         System.out.println("Alamat\t\t: Padang, Lumajang");
         System.out.println("No HP\t\t: 085735547445");
         System.out.println("Hobi\t\t: Main Game");
-
   }
   
 }
