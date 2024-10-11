@@ -11,11 +11,11 @@ public class Tugas2 {
     int diskon_persen = 0, jumlahBuku;
 
     System.out.print("Masukan hari : ");
-    hari = input09.next();
+    hari = input09.nextLine();
     System.out.print("Masukan jumlah buku : ");
     jumlahBuku = input09.nextInt();
     System.out.print("Masukan jenis buku : ");
-    jenisBuku = input09.next();
+    jenisBuku = input09.nextLine();
 
     if (hari.equalsIgnoreCase("rabu")) {
       if (jenisBuku.equalsIgnoreCase("kamus")) {
