@@ -6,5 +6,9 @@
     "java.project.referencedLibraries": [],
     "java.debug.settings.onBuildFailureProceed": true,
     "java.dependency.packagePresentation": "flat",
-    "java.search.scope": "all"
+    "java.search.scope": "all",
+    "notebook.stickyScroll.mode": "indented",
+    "discord.detailsEditing": "Ngedit {file_name} Baris : {current_line}",
+    "discord.detailsIdling": "Nganggur",
+    "discord.lowerDetailsEditing": "Workspace: {workspace} 🤩"
 }
