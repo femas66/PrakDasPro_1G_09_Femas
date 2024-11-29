@@ -4,9 +4,12 @@ import java.util.Scanner;
 
 public class Kafe09 {
 
-  public static int hitungTotalHarga09(int pilihanMenu, int banyakItem, String kodePromo) {
+  public static int hitungTotalHarga09(int[][] menuDanJumlah, String kodePromo) {
     int[] hargaItems = {15000, 20000, 22000, 12000, 10000, 18000};
-    int hargaTotal = hargaItems[pilihanMenu-1] * banyakItem;
+    int hargaTotal = 0;
+    for (int i = 0; i < menuDanJumlah.length; i++) {
+      hargaTotal +=  (hargaItems[menuDanJumlah[i][0] - 1]) * menuDanJumlah[i][1];
+    }
     if (kodePromo.equals("DISKON50")) {
       return hargaTotal -= hargaTotal * 0.5;
     } else if (kodePromo.equals("DISKON30")) {
@@ -43,17 +46,28 @@ public class Kafe09 {
   
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
-   Menu("Andi", true, "DISKON50"); 
-    System.out.print("\nMasukan nomor menu yang ingin anda pesan : ");
-    int pilihanMenu = sc.nextInt();
+   Menu("Andi", true, "DISKON50");
 
-    System.out.print("Masukan jumlah item yang ingin dipesan: ");
-    int banyakItem = sc.nextInt();
+    System.out.print("Masukan jumlah menu yang anda inginkan : ");
+    int jumlahMenu = sc.nextInt();
+    int[][] menuDanJumlah = new int[jumlahMenu][2];
+    for (int i = 0; i < menuDanJumlah.length; i++) {
+      System.out.print("Masukan menu ke " + (i + 1) + " : ");
+      menuDanJumlah[i][0] = sc.nextInt();
+      System.out.print("Masukan jumlah yang dibeli : ");
+      menuDanJumlah[i][1] = sc.nextInt();
+      System.out.println("===================================");
+    }
 
     System.out.print("Masukan kode promo: ");
+    int totalPesananAnda = 0;
     String kodePromo = sc.next();
+    for (int i = 0; i < menuDanJumlah.length; i++) {
+      totalPesananAnda += menuDanJumlah[i][1];
+    }
 
-    int totalHarga = hitungTotalHarga09(pilihanMenu, banyakItem, kodePromo);
+    int totalHarga = hitungTotalHarga09(menuDanJumlah, kodePromo);
+    System.out.println("Total pesanan anda : " + totalPesananAnda);
     System.out.println("Total harga untuk pesanan anda : Rp " + totalHarga);
   }
 }
