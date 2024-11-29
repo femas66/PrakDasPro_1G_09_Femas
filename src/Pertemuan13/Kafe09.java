@@ -4,9 +4,16 @@ import java.util.Scanner;
 
 public class Kafe09 {
 
-  public static int hitungTotalHarga09(int pilihanMenu, int banyakItem) {
+  public static int hitungTotalHarga09(int pilihanMenu, int banyakItem, String kodePromo) {
     int[] hargaItems = {15000, 20000, 22000, 12000, 10000, 18000};
     int hargaTotal = hargaItems[pilihanMenu-1] * banyakItem;
+    if (kodePromo.equals("DISKON50")) {
+      return hargaTotal -= hargaTotal * 0.5;
+    } else if (kodePromo.equals("DISKON30")) {
+      return hargaTotal -= hargaTotal * 0.3;
+    } else {
+      System.out.println("Tidak valid kode promo");
+    }
     return hargaTotal;
   }
 
@@ -43,7 +50,10 @@ public class Kafe09 {
     System.out.print("Masukan jumlah item yang ingin dipesan: ");
     int banyakItem = sc.nextInt();
 
-    int totalHarga = hitungTotalHarga09(pilihanMenu, banyakItem);
+    System.out.print("Masukan kode promo: ");
+    String kodePromo = sc.next();
+
+    int totalHarga = hitungTotalHarga09(pilihanMenu, banyakItem, kodePromo);
     System.out.println("Total harga untuk pesanan anda : Rp " + totalHarga);
   }
 }
