@@ -11,6 +11,10 @@ public class MahasiswaMain09 {
 		mhs1.ubahKelas("2G");
 		mhs1.updateIPK(4.0);
 		mhs1.tampilkanInformasi();
+
+		Mahasiswa09 mhs2 = new Mahasiswa09("244107020201", "Femas akbar faturrohim", "1G", 3.67);
+		mhs2.updateIPK(3.9);
+		mhs2.tampilkanInformasi();
 	}
 
 }
