@@ -15,6 +15,8 @@ public class MahasiswaMain09 {
 		Mahasiswa09 mhs2 = new Mahasiswa09("244107020201", "Femas akbar faturrohim", "1G", 3.67);
 		mhs2.updateIPK(3.9);
 		mhs2.tampilkanInformasi();
+
+		Mahasiswa09 mhsFemas = new Mahasiswa09("244107020200", "Femas akbar faturrohim", "1G", 3.67);
 	}
 
 }
