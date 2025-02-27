@@ -15,6 +15,10 @@ public class MataKuliahMain09 {
 
 		MataKuliah09 mk2 = new MataKuliah09("MK02", "Fisika", 3, 6);
 		mk2.tampilkanInformasi();
+		mk2.ubahSKS(4);
+		mk2.tambahJam(2);
+		mk2.kurangiJam(1);
+		mk2.tampilkanInformasi();
 	}
 	
 }
