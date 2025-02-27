@@ -71,6 +71,4 @@ public class DataDosen09 {
 		}
 		System.out.println("Dosen paling muda adalah " + namaDosenTerkecil + " dengan usia " + usiaTerkecil);
 	}
-
-
 }
